@@ -18,6 +18,10 @@
         <maven.compiler.target>23</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.surefire.version>3.2.2</maven.surefire.version>
+
+        <sonar.projectKey>QIZIR1_103022300119_RIziq_Rizwan_praktik_CI-CD</sonar.projectKey>
+        <sonar.organization>qizir1</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
 
     <dependencies>
