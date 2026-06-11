@@ -39,7 +39,7 @@ jobs:
           SONAR_PROJECT_KEY: ${{ secrets.SONAR_PROJECT_KEY }}
           SONAR_ORGANIZATION: ${{ secrets.SONAR_ORGANIZATION }}
         run: |
-          mvn -B clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey="$SONAR_PROJECT_KEY" -Dsonar.organization="$SONAR_ORGANIZATION" -Dsonar.host.url=https://sonarcloud.io -Dsonar.token="$SONAR_TOKEN" -Dsonar.scanner.skipJreProvisioning=true --file pom.xml
+          mvn -B clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=QIZIR1_103022300119_RIziq_Rizwan_praktik_CI-CD -Dsonar.organization=qizir1 -Dsonar.host.url=https://sonarcloud.io -Dsonar.token=${{secrets.SONAR_TOKEN}} -Dsonar.scanner.skipJreProvisioning=true --file pom.xml
       - name: Package JAR
         run: mvn -B package -DskipTests --file pom.xml
 
